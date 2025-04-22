@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile Bank</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <!-- Mobile Layout -->
+
+      <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white">
+          <!-- Login Form -->
+
+          <div class="hero bg-gray-200 min-h-screen">
+            <div class="hero-content w-full">
+              <div class="card bg-white w-full shadow-2xl text-black">
+                <form class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="label">Phone Number</label>
+                    <input
+                      id="phone-number"
+                      type="text"
+                      class="input"
+                      placeholder="Your Phone Number"
+                    />
+                    <label class="label">Pin</label>
+                    <input
+                      id="pin-number"
+                      type="password"
+                      class="input"
+                      placeholder="Your Pin"
+                    />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <button id="btn-login" class="btn btn-neutral mt-4">
+                      Login
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>
