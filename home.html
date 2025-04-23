@@ -20,11 +20,13 @@
         <div class="mockup-phone-display text-white flex flex-col item-center">
           <!-- Available Balance Start-->
           <div
-            class="stats shadow bg-white text-black mt-28 max-w-40 mx-auto rounded-3xl"
+            class="stats shadow bg-white text-black mt-28 max-w-80 mx-auto rounded-3xl"
           >
             <div class="stat">
-              <div class="stat-value">89,400</div>
-              <div class="stat-desc">Available Balance</div>
+              <div id="account-balance" class="stat-value">79400</div>
+              <div class="stat-desc text-center font-bold">
+                Available Balance
+              </div>
             </div>
           </div>
           <div class="divider"></div>
@@ -32,8 +34,8 @@
 
           <!-- btn container start -->
           <div class="flex justify-center gap-10">
-            <button id="btn-add-money" class="btn btn-lg">Add Money</button
-            ><button id="btn-cash-out" class="btn btn-lg">Cash Out</button>
+            <button id="btn-show-add-money" class="btn btn-lg">Add Money</button
+            ><button id="btn-show-cash-out" class="btn btn-lg">Cash Out</button>
           </div>
           <!-- btn container end -->
 
@@ -41,8 +43,8 @@
 
           <!-- Add Money Form  Start-->
           <div
-            id="add-money-container"
-            class="card bg-white w-full shadow-2xl text-black hidden"
+            id="add-money-form"
+            class="card bg-white w-full shadow-2xl text-black"
           >
             <form class="card-body">
               <fieldset class="fieldset">
@@ -70,7 +72,7 @@
 
           <!-- Cash Out Form  Start-->
           <div
-            id="cash-out-container"
+            id="cash-out-form"
             class="card bg-white w-full shadow-2xl text-black hidden"
           >
             <form class="card-body">
@@ -89,7 +91,7 @@
                   class="input"
                   placeholder="Your Pin"
                 />
-                <button id="input-cash-out" class="btn btn-primary mt-4">
+                <button id="input-cash-out-btn" class="btn btn-primary mt-4">
                   Cash Out
                 </button>
               </fieldset>
@@ -100,5 +102,7 @@
       </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
   </body>
 </html>
